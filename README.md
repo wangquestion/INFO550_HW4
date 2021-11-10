@@ -3,6 +3,8 @@
 
 This is a projects to analysis the pollen data measured by two different devices that used two different mthods for classifying pollen speciations and counts. The current projects have two major aims:
 
+## NOTE: This project is functionally running on MacOS 12.0.1 with R 4.1.1
+
 __Aim 1__ Match the raw datasets obtained from the two device with same names of the pollen speciation
 __Aim 2__ Calcualte the weekly counts of total pollen and each speciations of two devices, respectivelu
 __Aim 3__ Draw a stacked barplot to compared the dominant species of pollen measure by two device in pollen peak weeks in 2020

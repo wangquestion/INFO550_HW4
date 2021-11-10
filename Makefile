@@ -12,4 +12,4 @@ Weekly_average_tables: Reassign
 
 # rule for making the figure
 Make_plot: Reassign Weekly_average_tables
-	Rscript R/Stacked_Clustered_Bar_Charts.R
+	Rscript R/Weekly_Plot.R
