@@ -1,4 +1,3 @@
-renv::restore()
 here::i_am('R/Reassign_Speciation_Name.R')
 
 ### This script renamed the pollen identified by the NAB device with the name from APS_300

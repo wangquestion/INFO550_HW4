@@ -1,4 +1,3 @@
-renv::restore()
 here::i_am('R/Weekly_Plot.R')
 
 # This script draw the barplots to compare the identified top5 speciations of pollen

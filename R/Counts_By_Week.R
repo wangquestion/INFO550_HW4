@@ -1,4 +1,3 @@
-renv::restore()
 here::i_am('R/Counts_By_Week.R')
 
 # This script calculates the weekly counts of each speciations in each device

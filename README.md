@@ -8,7 +8,7 @@ __Aim 2__ Calcualte the weekly counts of total pollen and each speciations of tw
 __Aim 3__ Draw a stacked barplot to compared the dominant species of pollen measure by two device in pollen peak weeks in 2020
 
 ### Restore Package Environment
-To restore the package environment for the present study, you may run the __R__ session from the root directory where the renv will automatically be active. If you need to run the R scrits respectively in some other place, you may use _renv::activate('path/to/renv')_ to activate the needed package from the given renv folder.
+To restore the package environment for the present study, you may open R in the root directoyr. Then run _renv::restore()_ to synchronize pacakge library
 
 ### How to make Report
 __Aim 1__ You may execute 'make Reassign' in bash. The datasets with new names will be stored in 'processed_data'
