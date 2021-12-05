@@ -1,6 +1,6 @@
 # rule for making the final report  
 report.html: Reassign Weekly_average_tables Make_plot
-	Rscript -e "rmarkdown::render('Rmd/report.Rmd', quiet = TRUE)"
+	Rscript -e "rmarkdown::render('Rmd/report.Rmd', output_file='../output/report.html')"
 
 # rule for cleanning data with new name
 Reassign:

@@ -1,13 +1,10 @@
+
 ### This script renamed the pollen identified by the NAB device with the name from APS_300
 library(data.table)
 library(dplyr)
-library(here)
 
-here::i_am('R/Reassign_Speciation_Name.R')
-
-
-NAB <- fread(here::here('data','clinic_identified.csv')) ### Read NAB method raw data
-APS_300 <- fread(here::here('data','182192020.csv')) ### Read APS_300 method raw data
+NAB <- fread('data/clinic_identified.csv') ### Read NAB method raw data
+APS_300 <- fread('data/182192020.csv') ### Read APS_300 method raw data
 
 #The relationship is corresponded to previous literactures
 colnames(APS_300)[colnames(APS_300)=='Chenopodium / Amaranthus'] <- 'Chen. /Amar.'
@@ -29,8 +26,8 @@ colnames(APS_300)[colnames(APS_300)=='Betula'] <- 'BETULA'
 NAB$BETULA <- NAB$BIRCH + NAB$HAZELNUT 
 
 # Save the datasets with new names
-write.csv(NAB,here::here('processed_data','NAB_new_name.csv'),row.names = F)
-write.csv(APS_300,here::here('processed_data','APS_300_new_name.csv'),row.names = F)
+write.csv(NAB,'processed_data/NAB_new_name.csv',row.names = F)
+write.csv(APS_300,'processed_data/APS_300_new_name.csv',row.names = F)
 
 
 

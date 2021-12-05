@@ -1,7 +1,6 @@
-here::i_am('R/Weekly_Plot.R')
-
 # This script draw the barplots to compare the identified top5 speciations of pollen
 # of each device of NAB and APS-300 during the pollen peak period (Week 10 to 16)
+library(here)
 library(ggplot2)
 library(data.table)
 library(lubridate)
@@ -12,6 +11,7 @@ library(viridis)
 library(RColorBrewer)
 library(stringr)
 
+here::i_am('R/Weekly_Plot.R')
 #### Read datasets
 NAB_by_week <- fread(here::here('output','NAB_counts_by_week.csv'))
 APS_300_by_week <- fread(here::here('output','APS_300_counts_by_week.csv'))

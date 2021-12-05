@@ -1,10 +1,11 @@
-here::i_am('R/Counts_By_Week.R')
-
 # This script calculates the weekly counts of each speciations in each device
 library(data.table)
 library(dplyr)
 library(lubridate)
+library(here)
 
+
+here::i_am('R/Counts_By_Week.R')
 NAB <- fread(here::here('processed_data','NAB_new_name.csv'))
 APS_300 <- fread(here::here('processed_data','APS_300_new_name.csv'))
 
