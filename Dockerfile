@@ -1,7 +1,6 @@
 FROM rocker/tidyverse
 
 # install R packages
-<<<<<<< HEAD
 RUN Rscript -e "install.packages(c('here','ggplot2','data.table','lubridate','dplyr','reshape2','plyr','viridis','RColorBrewer','stringr'))"
 
 # make a project directory in the container
