@@ -24,7 +24,7 @@ Then you can retreve the report and data from the image using the command:
 docker run -v /localpath/report:/project/output wangquestion/bios550_wwh_docker
 ```
 
-The `localpat` need to be changed to local path. The report and two csv file recording pollen data by week will be storaged in `report` folder
+The `localpath` need to be changed to local path. The report and two csv file recording pollen data by week will be storaged in `report` folder
 
 ## PART II (HOMEWORK 4) GNU Method
 
