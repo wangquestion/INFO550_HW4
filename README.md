@@ -15,13 +15,13 @@ __Aim 3__ Draw a stacked barplot to compared the dominant species of pollen meas
 The docker image can be acquired by:
 
 ``` bash
-docker pull wangquestion/bios550_wwh_docker
+docker pull wangquestion/info550_final_wenhao
 ```
 
 Then you can retreve the report and data from the image using the command:
 
 ``` bash
-docker run -v /localpath/report:/project/output wangquestion/bios550_wwh_docker
+docker run -v /localpath/report:/project/output wangquestion/info550_final_wenhao
 ```
 
 The `localpath` need to be changed to local path. The report and two csv file recording pollen data by week will be storaged in `report` folder
